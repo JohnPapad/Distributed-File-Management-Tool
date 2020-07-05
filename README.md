@@ -22,7 +22,7 @@ This projects implements a distributed file management tool. More specifically i
 *jobExecutor* application that creates a series of *Worker* processes that alongside with the
 *jobExecutor* answer to user queries.
 
-*Fork / exec* system calls, processes' communication through *named-pipes/pipes*, 
+*Fork / exec* system calls, processes' communication through *named-pipes (FIFOS)*, 
 *low-level I/O*, *signals* handling are included.
 
 The [***Trie***](https://en.wikipedia.org/wiki/Trie) and the ***postings list*** data structures were used, as well, and their implementation were taken from the [***Mini Search Engine project***](https://github.com/JohnPapad/Mini-Search-Engine).
@@ -35,6 +35,8 @@ The project was developed for the class of ***"System Programing"*** in the Info
 ## Inputs
 
 The ***docfile*** (or any other file name) is a file that includes directory paths, that contain ASCII text files. Each line contains only one path.
+
+> A demo input file ([demo_docfile](demo_docfile)) is provided, as well as the corresponding, necessary demo directories ([testing_dirs](testing_dirs)).
 
 
 <a name="process_comm"/>
@@ -102,8 +104,7 @@ The *jobExecutor* notifies *Workers* to terminate. Before terminating, each *Wor
 
 ## Bash scripts
 
-Two bash scripts were also implemented. They read the log files created by the *Workers*
-(when terminating) and calculate the following statistics:
+Three bash scripts (in the [log folder](log)), *```count_search.sh, get_maxcount_keyword.sh, get_mincount_keyword.sh```*, were also implemented. They read the log files created by the *Workers* (when terminating) and calculate the following statistics:
 
 - ***Total number of keywords searched***: the number of search queries, that the *Workers* received in total.
 - ***Keyword most frequently found***: ```<keyword> [totalNumFilesFound: XXX]```:    

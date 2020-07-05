@@ -35,3 +35,6 @@ posting_list.o: posting_list.cpp posting_list.h dir.h helping_funs.h
 
 clean:
 	rm -f jobExecutor *.o *.fifo 
+
+delete_logs:
+	rm -f ./log/Worker*

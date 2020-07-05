@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dirName="log/"        
+dirName="./"        
 
 echo "Log directory: ${dirName}"
 printf 'Total number of keywords searched: '

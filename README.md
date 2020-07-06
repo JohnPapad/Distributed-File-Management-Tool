@@ -18,9 +18,8 @@
 
 ## Introduction
 
-This projects implements a distributed file management tool. More specifically it consists of the
-*jobExecutor* application that creates a series of *Worker* processes that alongside with the
-*jobExecutor* answer to user queries.
+This projects implements a distributed file management tool.     
+More specifically, it consists of the *jobExecutor* application that creates a series of *Worker* processes that alongside with the *jobExecutor* answer to user queries.
 
 *Fork / exec* system calls, processes' communication through *named-pipes (FIFOS)*, 
 *low-level I/O*, *signals* handling are included.

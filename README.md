@@ -21,7 +21,7 @@
 This projects implements a distributed file management tool.     
 More specifically, it consists of the *jobExecutor* application that creates a series of *Worker* processes that alongside with the *jobExecutor* answer to user queries.
 
-*Fork / exec* system calls, processes' communication through *named-pipes (FIFOS)*, 
+*Fork / exec* system calls, processes' communication through *named-pipes (FIFOs)*, 
 *low-level I/O*, *signals* handling are included.
 
 The [***Trie***](https://en.wikipedia.org/wiki/Trie) and the ***postings list*** data structures were used, as well, and their implementation were taken from the [***Mini Search Engine project***](https://github.com/JohnPapad/Mini-Search-Engine).

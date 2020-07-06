@@ -59,7 +59,7 @@ If the *jobExecutor* is informed that a *Worker* has terminated (e.g. due to rec
 
 ## Application interface
 
-A makefile is provided. You can use the command ```$ make``` for easy compilation and ```$ make clean``` to delete all **.o* auto generated files.
+A makefile is provided. You can use the command ```$ make``` for easy compilation, ```$ make clean``` to delete all **.o* auto generated files and ```$ make delete_logs``` to delete all generated *Workers'* logs in the [log folder](log).
 
 To run the application use the command:   
 ```$ ./jobExecutor –d <docfile> –w <numWorkers>```
